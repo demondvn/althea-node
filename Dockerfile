@@ -17,7 +17,7 @@ RUN make install
 
 # Expose the port that the application listens on
 # EXPOSE 8080
-WORKDIR /usr/bin/
+# WORKDIR /usr/bin/
 VOLUME ~/.althea/
 # Run the Golang application when the container starts
-CMD [ "./althea","start" ]
+CMD [ "althea","start" ]
