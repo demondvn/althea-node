@@ -14,7 +14,7 @@ RUN mv althea-v0.3.2-linux-amd64 /usr/bin/althea
 
 # Expose the port that the application listens on
 # EXPOSE 8080
-WORKDIR /usr/bin/althea
+WORKDIR /usr/bin/
 VOLUME ~/.althea/
 # Run the Golang application when the container starts
 CMD [ "./althea","start" ]
